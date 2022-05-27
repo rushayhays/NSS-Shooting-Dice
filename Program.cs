@@ -39,8 +39,36 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            Player cheater = new OneHigherPlayer();
+            cheater.Name = "El Dorado";
+
+            cheater.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            Player human = new HumanPlayer();
+            human.Name = "Cumin";
+
+            human.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            Player verysmartmouth = new CreativeSmackTalkingPlayer();
+            verysmartmouth.Name = "Ham";
+
+            verysmartmouth.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            Player grumpy = new SoreLoserPlayer();
+            grumpy.Name = "Grumpy";
+
+            grumpy.Play(player1);
+
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, large, smartmouth, cheater, human, verysmartmouth, grumpy
             };
 
             PlayMany(players);

@@ -7,7 +7,15 @@ namespace ShootingDice
     public class CreativeSmackTalkingPlayer : Player
     {
 
-        public List<string> ListOfTaunts= new List<string>{"Looks like your bringing your 'F' game today","I sure would be embarrased if my dice looked like yours. If I had child as ugly as you I'd shave thier butt and make them walk backwards"};
+        public List<string> ListOfTaunts= new List<string>
+        {
+            "Looks like your bringing your 'F' game today",
+            "I sure would be embarrased if my dice looked like yours.",
+            "If I had child as ugly as you I'd shave thier butt and make them walk backwards",
+            "You eat dogcrap for breakfast, geek",
+            "You bob for apples in your toilet, And You Like It",
+            "Your an L-7 weenie"
+        };
 
         public override void Play(Player other)
         {
