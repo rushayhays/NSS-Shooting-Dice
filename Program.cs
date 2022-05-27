@@ -66,9 +66,23 @@ namespace ShootingDice
             grumpy.Play(player1);
 
             Console.WriteLine("-------------------");
+            
+            Player upperCrust = new UpperHalfPlayer();
+            upperCrust.Name = "Thurston Howell III";
+
+            upperCrust.Play(player1);
+            
+            Console.WriteLine("-------------------");
+
+            Player upperloser = new SoreLoserUpperHalfPlayer();
+            upperloser.Name = "Solomon";
+
+            upperloser.Play(player1);
+            
+            Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smartmouth, cheater, human, verysmartmouth, grumpy
+                player1, player2, player3, large, smartmouth, cheater, human, verysmartmouth, grumpy, upperCrust, upperloser
             };
 
             PlayMany(players);
